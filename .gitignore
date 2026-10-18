@@ -1,0 +1,10 @@
+# Archivos compilados de Java
+*.class
+
+# Editores e IDEs
+.vscode/
+.idea/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
