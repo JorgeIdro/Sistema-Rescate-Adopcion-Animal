@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportar Rescate - Sistema de Rescate Animal</title>
+</head>
+<body>
+    <header>
+        <img src="assets/img/logo.svg" alt="Logo Refugio de Esperanza Animal" width="100">
+        <h1>Refugio de Esperanza Animal</h1>
+        <h2>Módulo de Ingreso de Rescates</h2>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio (Dashboard)</a></li>
+            <li><a href="reportar.html">Reportar un Rescate</a></li>
+            <li><a href="rescates.html">Listado de Rescates</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Registrar Nuevo Animal Rescatado</h2>
+            <article>
+                <h3>Formulario de Ingreso</h3>
+                <p>Por favor, completa el siguiente formulario con la información del animal rescatado.</p>
+                
+                <form action="#" method="POST">
+                    <!-- Campo de texto -->
+                    <label for="nombre">Nombre provisional o título del caso:</label><br>
+                    <input type="text" id="nombre" name="nombre" required><br><br>
+
+                    <!-- Lista desplegable -->
+                    <label for="categoria">Categoría (Especie):</label><br>
+                    <select id="categoria" name="categoria" required>
+                        <option value="">-- Seleccione una categoría --</option>
+                        <option value="perros">Perros</option>
+                        <option value="gatos">Gatos</option>
+                        <option value="fauna_silvestre">Fauna Silvestre</option>
+                    </select><br><br>
+
+                    <!-- Botones de opción -->
+                    <p>Nivel de urgencia médica:</p>
+                    <input type="radio" id="urgencia_alta" name="urgencia" value="Alta" required>
+                    <label for="urgencia_alta">Alta</label><br>
+                    <input type="radio" id="urgencia_media" name="urgencia" value="Media">
+                    <label for="urgencia_media">Media</label><br>
+                    <input type="radio" id="urgencia_baja" name="urgencia" value="Baja">
+                    <label for="urgencia_baja">Baja</label><br><br>
+
+                    <!-- Área de texto -->
+                    <label for="descripcion">Descripción detallada del estado en que se encontró:</label><br>
+                    <textarea id="descripcion" name="descripcion" rows="5" cols="40" required></textarea><br><br>
+
+                    <input type="submit" value="Registrar Caso">
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sistema de Rescate Animal. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
